@@ -7,13 +7,6 @@ logging.basicConfig(filename='logger.log', encoding='utf-8', level=logging.DEBUG
 logger = logging.getLogger()
 
 
-
-
-
-# Взять класс студент из дз 12-го семинара, добавить запуск из командной строки(передача в качестве аргумента название
-# csv-файла с предметами), логирование и написать 3-5 тестов с использованием pytest.
-
-
 class Validate:
     def __set_name__(self, owner, name):
         self.name = "_" + name
@@ -97,9 +90,6 @@ class Student:
         size = len(new_lst)
         if size > 0:
             return sum(new_lst)/size
-
-
-
 
 
 def main():

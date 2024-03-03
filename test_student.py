@@ -9,6 +9,7 @@ def create_student():
     st.add_test_score("История", 92)
     return st
 
+
 def test_employee_full_name():
     st = Student("Иван Иванов", "subjects.csv")
     assert st.name == "Иван Иванов"
